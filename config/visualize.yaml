@@ -1,0 +1,16 @@
+GLOBAL:
+  PRETRAINED_MODEL:
+  RESUME_PATH: D:\WorkSpace\test\AE\train_log\LAE-2023-0227_1108\checkpoints\best.pth.tar
+  DATA_DIR: ./data
+
+MODEL:
+  NAME: LAE
+  IN_CHANNEL: 784
+  LATENT_DIM: 64
+
+  # LAE's parameter
+  LAE_ENCODER_HIDDEN_DIM: [ 512, 256, 128 ]
+  LAE_DECODER_HIDDEN_DIM: [ 128, 256, 512 ]
+
+  # VAE's parameter
+  VAE_HIDDEN_DIM: [32, 64, 128, 256, 512]
